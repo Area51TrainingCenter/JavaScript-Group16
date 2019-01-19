@@ -68,6 +68,22 @@ console.log(colores[1 + 1]); // "rojo"
 ```
 
 
+Similitudes entre Object y Array:
+
+```js
+// object
+let auto1 = {};
+let auto2 = { a: 'a1', b: 'b1' };
+auto2.c = 'c1';
+auto2.d = 'd2';
+
+// array
+let edades1 = [];
+let edades2 = [ 23, 24 ];
+edades2.push(25);
+edades2.push(26);
+```
+
 ### Creando estructuras de datos
 
 ```js
