@@ -1,6 +1,9 @@
+// Se requiere una función con parámetros opcionales
+
 const saludo = (nombre, apellido) => {
   // Forma 1: NO!
   // return `${nombre} ${apellido}`;
+
 
   // Forma 2: NO
   // let resultado = '';
@@ -34,3 +37,7 @@ console.log( saludo() ); // 'undefined undefined'
 console.log( saludo('Renzo') ); // 'Renzo undefined'
 console.log( saludo('Renzo', 'Lopez') ); // 'Renzo Lopez'
 
+
+
+
+// NOTA: En la siguiente clase veremos como usar valor por defecto.
