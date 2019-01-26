@@ -11,7 +11,7 @@ console.log(personasDeVeintes);
 
 // nombre empieza con A
 const personasConLetraA = personas.filter(persona => {
-  return persona.nombre[0].toUpperCase() === 'A';
+  return persona.nombre[0].toLowerCase() === 'a';
 });
 console.log(personasConLetraA);
 

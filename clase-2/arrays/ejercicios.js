@@ -101,5 +101,23 @@ console.log(numerosConvertidos);
 
 
 
+const personas = [
+  { nombre: 'Pedro', edad: 23 },
+  { nombre: 'Ana', edad: 25 },
+  { nombre: 'Xavi', edad: 32 },
+  { nombre: 'Patricia', edad: 35 }
+];
 
+const personasConActivo = personas.map(persona => {
+  persona.activo = false;
+  return persona;
+});
+console.log('personasConActivo', personasConActivo);
+
+// [
+//   { nombre: 'Pedro', edad: 23, activo: false },
+//   { nombre: 'Ana', edad: 25, activo: false },
+//   { nombre: 'Xavi', edad: 32, activo: false },
+//   { nombre: 'Patricia', edad: 35, activo: false }
+// ];
 
