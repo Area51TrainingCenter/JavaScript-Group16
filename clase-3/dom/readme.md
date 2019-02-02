@@ -1,0 +1,77 @@
+```js
+document.body.children[1];
+// <ul id=​"lista">​…​</ul>​
+
+document.getElementById('lista')
+// <ul id=​"lista">​…​</ul>​
+
+document.querySelector('#lista')
+// <ul id=​"lista">​…​</ul>​
+
+
+
+
+document.body.children[0]
+// <h1>​Título​</h1>​
+
+document.getElementsByTagName('h1')
+// HTMLCollection [h1]
+
+document.getElementsByTagName('h1')[0]
+// <h1>​Título​</h1>​
+
+document.querySelector('h1')
+// <h1>​Título​</h1>​
+
+document.querySelectorAll('h1')
+// NodeList [h1]
+
+document.querySelectorAll('h1')[0]
+// <h1>​Título​</h1>​
+
+
+
+
+
+let liPersona;
+
+liPersona = document.createElement('li');
+// <li>​</li>​
+
+liPersona.textContent = 'Juan';
+
+liPersona
+// <li>​Juan​</li>​
+
+liPersona.setAttribute('class', 'persona');
+
+liPersona
+// <li class=​"persona">​Juan​</li>​
+
+miLista
+// <ul id=​"lista">​…​</ul>​
+
+miLista.appendChild(liPersona);
+// <li class=​"persona">​Juan​</li>​
+
+liPersona.classList.add('persona')
+
+liPersona
+// <li class=​"persona">​Juan​</li>​
+
+liPersona.classList.remove('persona')
+
+liPersona
+// <li class=​"">​Juan​</li>​
+
+
+
+
+let htmlCarlos = '<li class="persona">Carlos</li>';
+
+miLista.innerHTML = `${miLista.innerHTML}${htmlCarlos}`;
+
+miLista.removeChild( miLista.children[4] );
+
+miLista.insertBefore( liPersona, miLista.children[1] );
+```
