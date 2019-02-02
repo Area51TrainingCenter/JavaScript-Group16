@@ -1,3 +1,7 @@
+# 1. DOM: Document Object Model
+
+Abrir el archivo `index.html` en Google Chrome. Inspeccionar la página e ir a `console` y probar las siguientes líneas:
+
 ```js
 document.body.children[1];
 // <ul id=​"lista">​…​</ul>​
@@ -7,10 +11,9 @@ document.getElementById('lista')
 
 document.querySelector('#lista')
 // <ul id=​"lista">​…​</ul>​
+```
 
-
-
-
+```js
 document.body.children[0]
 // <h1>​Título​</h1>​
 
@@ -28,11 +31,9 @@ document.querySelectorAll('h1')
 
 document.querySelectorAll('h1')[0]
 // <h1>​Título​</h1>​
+```
 
-
-
-
-
+```js
 let liPersona;
 
 liPersona = document.createElement('li');
@@ -63,15 +64,14 @@ liPersona.classList.remove('persona')
 
 liPersona
 // <li class=​"">​Juan​</li>​
+```
 
-
-
-
+```js
 let htmlCarlos = '<li class="persona">Carlos</li>';
 
 miLista.innerHTML = `${miLista.innerHTML}${htmlCarlos}`;
 
 miLista.removeChild( miLista.children[4] );
 
-miLista.insertBefore( liPersona, miLista.children[1] );
+miLista.insertBefore( miLista.children[3], miLista.children[1] );
 ```

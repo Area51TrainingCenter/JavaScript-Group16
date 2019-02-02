@@ -1,4 +1,4 @@
-# Glosario 4
+# Glosario
 
 
 ## Selector

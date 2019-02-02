@@ -38,9 +38,29 @@ node clase-2/funciones.js
 - Seguir practicando en [SoloLearn](https://www.sololearn.com/).
 
 
-## Clase 3 [02-02-2019]
+## [Clase 3](./clase-3/) [02-02-2019]
 
-- Usando IF con más de una condicional.
-- [Array and object destructing](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Operadores/Destructuring_assignment).
 - [DOM y eventos (Parte 1)](./docs/js-dom.md).
+- [Array and object destructing](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Operadores/Destructuring_assignment).
+- [Spread operator](https://davidwalsh.name/spread-operator).
+- [setTimeout y setInterval](./docs/timing-functions.md).
 - [Glosario](./docs/glosario.md).
+
+### Tarea
+
+- [Webpack 4: Introducción](https://medium.com/@renzocastro/webpack-4-introducci%C3%B3n-41062c8247f).
+- [Webpack + Babel: Transpilando tu .JS](https://medium.com/@renzocastro/webpack-babel-transpilando-tu-js-502244a61f5b).
+
+
+### Recomendaciones
+
+- Compartir código a través de [StackBlitz](https://stackblitz.com/).
+
+
+## Clase 4 [09-02-2019]
+
+- Webpack.
+- DOM y Eventos (Parte 2).
+- iife: Immediately-invoked function expression.
+- XMLHttpRequest y Fetch (Parte 1).
+
