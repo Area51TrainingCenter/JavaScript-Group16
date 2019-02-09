@@ -57,10 +57,11 @@ node clase-2/funciones.js
 - Compartir código a través de [StackBlitz](https://stackblitz.com/).
 
 
-## Clase 4 [09-02-2019]
+## [Clase 4](./clase-4/) [09-02-2019]
 
-- Webpack.
-- DOM y Eventos (Parte 2).
-- iife: Immediately-invoked function expression.
+- Webpack Started Kit: Webpack + Babel + Browserslist.
+  - [Parte 1: First Steps.](./clase-4/webpack-1/)
+  - [Parte 2: Todolist (DOM y Eventos - Parte 2)](./clase-4/webpack-2/).
+- [IIFE: Immediately-invoked function expression.](https://medium.com/@vvkchandra/essential-javascript-mastering-immediately-invoked-function-expressions-67791338ddc6).
 - XMLHttpRequest y Fetch (Parte 1).
 
