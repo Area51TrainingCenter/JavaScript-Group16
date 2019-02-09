@@ -59,9 +59,20 @@ node clase-2/funciones.js
 
 ## [Clase 4](./clase-4/) [09-02-2019]
 
-- Webpack Started Kit: Webpack + Babel + Browserslist.
-  - [Parte 1: First Steps.](./clase-4/webpack-1/)
-  - [Parte 2: Todolist (DOM y Eventos - Parte 2)](./clase-4/webpack-2/).
-- [IIFE: Immediately-invoked function expression.](https://medium.com/@vvkchandra/essential-javascript-mastering-immediately-invoked-function-expressions-67791338ddc6).
-- XMLHttpRequest y Fetch (Parte 1).
+- Webpack Started Kit: Webpack + Babel + Browserslist :
+  - [Parte 1: First Steps](./clase-4/webpack-1/).
+  - [Parte 2: Todolist - Parte 1 (DOM y Eventos)](./clase-4/webpack-2/).
+  - [Parte 3: Todolist - Parte 2 (DOM y Eventos)](./clase-4/webpack-3/).
+
+### Tarea
+- Lectura: [IIFE: Immediately-invoked function expression](https://medium.com/@vvkchandra/essential-javascript-mastering-immediately-invoked-function-expressions-67791338ddc6).
+- Todolist - Parte 3.
+
+
+## [Clase 5](./clase-5/) [16-02-2019]
+
+- Eventos Delegados.
+- [XMLHttpRequest y Fetch](./clase-5/xhr-y-fetch/).
+- ...
+
 

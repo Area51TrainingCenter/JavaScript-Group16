@@ -1,5 +1,3 @@
-// >
-// <
 const txtTarea = document.querySelector('#txtTarea');
 
 const crearItem = texto => {

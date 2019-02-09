@@ -1,5 +1,3 @@
-// >
-// <
 const txtTarea = document.querySelector('#txtTarea');
 let tareasContador = 0;
 
@@ -25,18 +23,26 @@ const crearItemUsandoHTML = texto => {
 const crearItem = texto => {
   tareasContador += 1;
 
+
   const miAncla = document.createElement('a');
   miAncla.textContent = 'X';
   miAncla.href = `#tarea${tareasContador}`;
   miAncla.addEventListener('click', onClickMiAncla);
+  // <a href="#">X</a>
 
   const miElemento = document.createElement('div');
   miElemento.id = `tarea${tareasContador}`;
   miElemento.textContent = texto;
+  // <div>tarea 1</div>
+
   miElemento.appendChild(miAncla);
+  // <div>tarea 1<a href="#">X</a></div>
 
   const miContenedor = document.querySelector('#contenedor');
   miContenedor.appendChild(miElemento);
+  // <div id="contenedor">
+  //   <div>tarea 1<a href="#">X</a></div>
+  // </div>
 };
 
 const agregarTarea = () => {
