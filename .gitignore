@@ -134,3 +134,4 @@ __*
 **/dist/*
 # but not ignore html files
 !**/dist/*.html
+!**/dist/favicon.ico
