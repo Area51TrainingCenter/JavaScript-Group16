@@ -31,6 +31,11 @@ node clase-2/arrays/ejercicios.js
 node clase-2/funciones.js
 ```
 
+### Recomendaciones
+
+- [Array: Descripción y uso de funciones básicas](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Array).
+
+
 ### Tarea
 
 - Leer sobre `getElementById`, `getElementsByClassName`, `getElementsByTagName`, `querySelector` y `querySelectorAll`.

@@ -1,6 +1,26 @@
 let btn;
 let txtTarea;
 let tareasContador = 1;
+let miContenedor;
+
+const removerElemento = selector => {
+  const miElemento = document.querySelector(selector);
+
+  miContenedor = document.querySelector('#contenedor');
+  miContenedor.removeChild(miElemento);
+};
+
+const onClickDelegateContenedor = event => {
+  // event.currentTarget // Elemento al cual se aplico la ESCUCHA del evento
+  // event.target // elemento hijo contenido que fue cliqueado
+
+  if (event.target.tagName === 'A') {
+    const miAncla = event.target;
+    const selector = miAncla.getAttribute('href');
+
+    removerElemento(selector);
+  }
+};
 
 const onClickMiAncla = event => {
   event.preventDefault();
@@ -8,10 +28,7 @@ const onClickMiAncla = event => {
   const miAncla = event.currentTarget;
   const selector = miAncla.getAttribute('href');
 
-  const miElemento = document.querySelector(selector);
-
-  const miContenedor = document.querySelector('#contenedor');
-  miContenedor.removeChild(miElemento);
+  removerElemento(selector);
 };
 
 const crearItemUsandoHTML = texto => {
@@ -29,7 +46,7 @@ const crearItem = texto => {
   const miAncla = document.createElement('a');
   miAncla.textContent = 'X';
   miAncla.href = `#tarea${tareasContador}`;
-  miAncla.addEventListener('click', onClickMiAncla);
+  //miAncla.addEventListener('click', onClickMiAncla);
   // <a href="#">X</a>
 
   const miElemento = document.createElement('div');
@@ -40,7 +57,6 @@ const crearItem = texto => {
   miElemento.appendChild(miAncla);
   // <div>tarea 1<a href="#">X</a></div>
 
-  const miContenedor = document.querySelector('#contenedor');
   miContenedor.appendChild(miElemento);
   // <div id="contenedor">
   //   <div>tarea 1<a href="#">X</a></div>
@@ -102,6 +118,7 @@ const loadData = () => {
 }
 
 const cache = () => {
+  miContenedor = document.querySelector('#contenedor');
   btn = document.querySelector('#btnAgregar');
   txtTarea = document.querySelector('#txtTarea');
 };
@@ -109,6 +126,8 @@ const cache = () => {
 const listeners = () => {
   btn.addEventListener('click', onClickBtnAgregar);
   txtTarea.addEventListener('keypress', onKeypressTxtTarea);
+  miContenedor.addEventListener('click', onClickDelegateContenedor);
+
 };
 
 const setup = () => {
@@ -116,8 +135,10 @@ const setup = () => {
     .then(data => {
       console.log('DATA', data);
 
-      // data.map(item => item.title).forEach(crearItem);
-      data.forEach(item => { crearItem(item.title) });
+      setTimeout(() => {
+        // data.map(item => item.title).forEach(crearItem);
+        data.forEach(item => crearItem(item.title));
+      }, 10000);
     })
     .catch(err => {
       console.log('ERROR', err);
